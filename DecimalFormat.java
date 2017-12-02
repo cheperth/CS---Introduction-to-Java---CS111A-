@@ -2,7 +2,7 @@
 import java.util.Scanner; 
 import java.text.DecimalFormat;
 
-public class DecimalFormat
+public class DecimalFormat //decimal format 
 {
 
  public static void roundToInteger(double a) //method to display user input as integer 
