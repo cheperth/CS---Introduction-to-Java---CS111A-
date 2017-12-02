@@ -6,7 +6,7 @@
 // Written by   : Che Perth 
 // Last Modified: September 8 2017
 //**************************************************
-public class First 
+public class Haiku 
 {
  public static void main (String[] args)  
  {
