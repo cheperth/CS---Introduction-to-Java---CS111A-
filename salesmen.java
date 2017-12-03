@@ -1,37 +1,44 @@
+
 import java.util.*; 
 
 public class salesmen
 {
+ public static int b; 
+ /********************************largest()********************************
+Largest number method gets the largest number(element) in the array. 
+*/  public static int largest(int a[])
+    {   
+        int temp = 0;
+        for ( int i = 0; i < a.length; i++)
+        if(temp < a[i])
+        temp = a[i];
+        return temp;
+    }
+
     public static void main(String[] args) 
     {
         Scanner stdin = new Scanner(System.in);
 
-        System.out.println("Enter in salesmen.");
+        int temp = 0;
+        
+        System.out.println("Enter in the number of salesmen.");
         int salesmen = stdin.nextInt();
        
-       int[] sales = new int[salesmen];
-
-        for (int b = 0; b < salesmen; b++) 
+        int[] sales = new int[salesmen+1];
+       
+        for (int b = 1; b < salesmen+1; b++) 
         {
-            System.out.print("Enter the sales for salesmen # " + (b + 1) + ":");
+            System.out.print("Enter the sales for salesmen # " + (b) + ":");
             sales[b] = stdin.nextInt();
+            counter++; 
         }
 
-        for (int b = 0; b < salesmen; b++) 
+        for (int b = 1; b < salesmen+1; b++) 
         {
-            System.out.print((b + 1) + " " + sales[b] + " ");
+            System.out.println(("Salesmen # " + b ) + "  sales = " + sales[b] + " ");
         }
 
         System.out.println(" ");
-
-        int temp = 0;
-        for (int i = 0; i < sales.length; i++) 
-        {
-            if (temp < sales[i]) 
-            {
-                temp = sales[i];
-                System.out.println((i + 1) + " " + temp);
-            }
-        }
-    }
+        System.out.println("The largest sales value entered was: "+(largest(sales))); 
+     }
 }
