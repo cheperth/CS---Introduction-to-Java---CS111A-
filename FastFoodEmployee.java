@@ -1,6 +1,6 @@
 import java.util.*; 
 
-public class HomeWork5C 
+public class FastFoodEmployee
 { 
  public static String burgerType; 
  public static String drinkType; 
