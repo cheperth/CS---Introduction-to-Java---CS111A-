@@ -1,3 +1,5 @@
+import java.util.*; 
+
 public class salesmen
 {
     public static void main(String[] args) 
