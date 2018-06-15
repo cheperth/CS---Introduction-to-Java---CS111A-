@@ -1,2 +1,2 @@
-# cs111a
-Class assignments i did for my CS111A Introduction to Java class at CCSF. 
+# CS---Programming-Fundamentals-Java---111B
+Problems, code, lessons and algorithms from My CS111B Programming Fundamentals: Java class 
