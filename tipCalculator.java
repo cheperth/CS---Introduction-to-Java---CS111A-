@@ -22,20 +22,18 @@ import java.util.Scanner;
    	 
      	if (rating == 1)
         	{
-         	System.out.print("The tip for the waiter based on the customer being Totally");
-     	    System.out.print(" "); 
-         	System.out.println("Satisfied is" + " " + "$" +(totalAmount * .20));
+         	System.out.print("The tip for the waiter based on the customer being totally ");
+         	System.out.printf("satisfied is $%.2f", (totalAmount * 0.20));
         	}    	 
      	else if(rating == 2)
         	{     	 
-         	System.out.print("The tip for the waiter based on the customer being");
-   	        System.out.print(" "); 
-         	System.out.println("Satisfied is" + " " + "$" +(totalAmount * .15));
+         	System.out.print("The tip for the waiter based on the customer being ");
+         	System.out.printf("satisfied is $%.2f", (totalAmount * 0.15));
         	}
      	else if(rating == 3)
         	{
-         	System.out.print("The tip for the waiter based on the customer being");
-       	    System.out.print(" "); 
-         	System.out.println("Dissatisfied is" + " " + "$" +(totalAmount * .10));
+         	System.out.print("The tip for the waiter based on the customer being "); 
+         	System.out.printf("dissatisfied is $%.2f ", (totalAmount * 0.10));
         	}
   	} 	 
+  }
